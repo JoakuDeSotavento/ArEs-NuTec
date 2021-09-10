@@ -1,26 +1,17 @@
-// Copyright (c) 2019 ml5
-//
-// This software is released under the MIT License.
-
-// https://opensource.org/licenses/MIT
-
-/* ===
-ml5 Example
-PoseNet example using p5.js
-=== */
-
 let video;
 let poseNet; 
 let poses = []; 
 let mysound;
-let n;
-let p;
 
 function preload() {
 		soundFormats('mp3'); 
 		mysound = loadSound('https://openprocessing-usercontent.s3.amazonaws.com/files/user263752/visual1173311/h6634d9c2643695298405a4011b644354/Escena_dos.mp3');
 }
 
+/*〈( ^.^)ノ*/
+//const RECT_SIZE = 1;
+const RECT_SIZE = 1.5;
+//const RECT_SIZE = 2;
 
 
 function setup() {
@@ -28,65 +19,49 @@ function setup() {
   
   video = createCapture(VIDEO);
   video.size(width, height);
-
-  poseNet = ml5.poseNet(video, modelReady);
-  
-  poseNet.on('pose', function(results) {
-    poses = results;
-  });
-  video.hide();
-	mysound.play(n,p);
+	video.hide();
 	
-}
-
-
-
-function modelReady() {
-  select('#status').html('Model Loaded');
+  poseNet = ml5.poseNet(video);
+  poseNet.on('pose', function(results) {poses = results;});
+	
+	mysound.play();
+	
+	rectMode(CENTER);
+	noStroke();
 }
 
 function draw() {
-  
-  
-
- tint(50, 70, 80);
 	
- image(video, 0, 0, width, height);
-
-  // We can call both functions to draw all keypoints and the skeletons
-  //drawKeypoints();
- //drawSkeleton();
-  
-  drawJoints();
-
-}
-
-
-function drawJoints(){
-
-  
-for (let i = 0; i < poses.length; i++) { // go through all the detected skeletons
-    
-    console.log(poses); // print the content of each detected skeleton
-  
-   // let OneJoint = poses[i].pose; // go into the "pose" array
-    
-  if(poses[i].pose.rightEye.confidence >0.5){
-    rectMode(CENTER);
-		noStroke();
-		fill(random(0,250),random(0,250),random(0,250));
-    rect(poses[i].pose.rightEye.x, poses[i].pose.rightEye.y, random(10,50),random(10,50)); // extrapolate the coordinates
-    rect(poses[i].pose.leftEye.x, poses[i].pose.leftEye.y, random(10,50),random(10,50));
-    }
-	if(poses[i].pose.leftWrist.confidence >0.5){
-    rectMode(CENTER);
-		noStroke();
-		fill(random(0,250),random(0,250),random(0,250));
-    rect(poses[i].pose.rightWrist.x, poses[i].pose.rightWrist.y, random(10,50),random(10,50)); // extrapolate the coordinates
-    rect(poses[i].pose.leftWrist.x, poses[i].pose.leftWrist.y, random(10,50),random(10,50));
-    }
+	/*〈( ^.^)ノ*/
+	// BLUR
+	//tint(255, 20);
+	tint(255, 7);
+	image(video, 0, 0, width, height);
 	
-
+	/*〈( ^.^)ノ*/
+	// COLOR
+	//tint(50, 70, 80);
+	tint(70, 80, 50);
+	//tint(80, 50, 70);
+  
 	
-}
+	/*( ಠ益ಠ)*/
+	for (let i = 0; i < poses.length; i++) {
+		
+		if (poses[i].pose.rightEye.confidence > 0.5) {
+			fill(random(0, 250), random(0, 250), random(0, 250));
+			rect(poses[i].pose.rightEye.x, poses[i].pose.rightEye.y, RECT_SIZE * random(10,50), RECT_SIZE * random(10,50));
+			/*〈( ^.^)ノ*/
+			//fill(random(0, 250), random(0, 250), random(0, 250));
+			rect(poses[i].pose.leftEye.x, poses[i].pose.leftEye.y, RECT_SIZE * random(10,50), RECT_SIZE * random(10,50));
+		}
+		
+		if (poses[i].pose.leftWrist.confidence > 0.5) {
+			fill(random(0, 250), random(0, 250), random(0, 250));
+			rect(poses[i].pose.rightWrist.x, poses[i].pose.rightWrist.y, RECT_SIZE * random(10,50), RECT_SIZE * random(10,50));
+			/*〈( ^.^)ノ*/
+			//fill(random(0, 250), random(0, 250), random(0, 250));
+			rect(poses[i].pose.leftWrist.x, poses[i].pose.leftWrist.y, RECT_SIZE * random(10,50), RECT_SIZE * random(10,50));
+		}
+	}
 }

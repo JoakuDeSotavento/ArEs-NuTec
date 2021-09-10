@@ -11,7 +11,6 @@ function preload() {
 
 
 function setup() {
-	/*( ಠ益ಠ)*/
   createCanvas(640, 480, WEBGL);
   video = createCapture(VIDEO);
   video.size(width, height);
@@ -31,14 +30,16 @@ function draw() {
 	translate(-width/2, -height/2, 25);
 	background(0);
 	// Cambia el coloreado del video
-	//tint(100, 100, 100, 300);
+	/*〈( ^.^)ノ*/
+	tint(100, 100, 100, 300);
 	//tint(0, 100, 100, 300);
 	//tint(100, 0, 100, 300);
-	tint(100, 100, 0, 300);
+	//tint(100, 100, 0, 300);
 
   image(video, 0, 0, width, height);
 	
 	// Pone la imagen en blanco y negro
+	/*〈( ^.^)ノ*/
 	//filter(GRAY);
 	
 	
@@ -54,6 +55,7 @@ function draw() {
 		// SOUND
 		if (pose.nose.x < 320) {
 			// Izquierda
+			/*〈( ^.^)ノ*/
 			//mySound.setVolume(1);
 			mySound.setVolume(0.5);
 			//mySound.setVolume(0);
@@ -62,48 +64,50 @@ function draw() {
 			mySound.setVolume(1);
 		}
 		
+		
+		/*( ಠ益ಠ)*/
+		
 		/////////////////////////// WRIST
-		/*〈( ^.^)ノ*/
 		// Triangle of the left wrist 1
-		fill(0, 0, 0, 255);
-		//fill(random(140, 160), random(140, 160), random(140, 160));
+		//fill(0, 0, 0, 255);
+		fill(random(140, 160), random(140, 160), random(140, 160));
     const leftWrist = pose.leftWrist;
 		triangle(leftWrist.x,leftWrist.y, 490, 0, 500, 0);
 		
 		// Triangle of the left wrist 2
-		fill(0, 0, 0, 255);
-		//fill(random(140, 160), random(140, 160), random(140, 160));
+		//fill(0, 0, 0, 255);
+		fill(random(140, 160), random(140, 160), random(140, 160));
 		triangle(leftWrist.x,leftWrist.y, 510, 0, 520, 0);
 		
 		// Triangle of the left wrist 1 bottom
-		fill(0, 0, 0, 255);
-		//fill(random(140, 160), random(140, 160), random(140, 160));
+		//fill(0, 0, 0, 255);
+		fill(random(140, 160), random(140, 160), random(140, 160));
 		triangle(leftWrist.x, leftWrist.y, 490, 480, 500, 480);
 		
 		// Triangle of the left wrist 2 bottom
-		fill(0, 0, 0, 255);
-		//fill(random(140, 160), random(140, 160), random(140, 160));
+		//fill(0, 0, 0, 255);
+		fill(random(140, 160), random(140, 160), random(140, 160));
 		triangle(leftWrist.x, leftWrist.y, 510, 480, 520, 480);
 		
 		// Triangle of the right wrist 1
-		fill(0, 0, 0, 255);
-		//fill(random(140,160),random(140,160),random(140,160));
+		//fill(0, 0, 0, 255);
+		fill(random(140,160),random(140,160),random(140,160));
     const rightWrist = pose.rightWrist;
 		triangle(rightWrist.x,rightWrist.y, 140, 0, 150, 0);
 		
 		// Triangle of the right wrist 2
-		fill(0, 0, 0, 255);
-		//fill(random(140,160),random(140,160),random(140,160));
+		//fill(0, 0, 0, 255);
+		fill(random(140,160),random(140,160),random(140,160));
 		triangle(rightWrist.x,rightWrist.y, 120, 0, 130, 0);
 		
   	// Triangle of the right wrist 1 bottom
-		fill(0, 0, 0, 255);
-		//fill(random(140,160),random(140,160),random(140,160));
+		//fill(0, 0, 0, 255);
+		fill(random(140,160),random(140,160),random(140,160));
 		triangle(rightWrist.x,rightWrist.y, 140, 480, 150, 480);
 		
 		// Triangle of the right wrist 2 bottom
-		fill(0, 0, 0, 255);
-		//fill(random(140,160),random(140,160),random(140,160));
+		//fill(0, 0, 0, 255);
+		fill(random(140,160),random(140,160),random(140,160));
 		triangle(rightWrist.x,rightWrist.y, 120, 480, 130, 480);
 		
 		
@@ -166,7 +170,7 @@ function draw() {
 		triangle(40,0, 50, 0, 45, 480);
 		
 		/////// LEFT
-		fill(random(140,160),0,random(140,160));
+		fill(random(140,160),random(140,160),random(140,160));
 		triangle(530,0, 540, 0, 535, 480);
 		
 		fill(random(140,160),random(140,160),random(140,160));
@@ -187,11 +191,13 @@ function drawJoints() {
 		
 		if (poses[i].pose.leftWrist.confidence > 0.5) {
 			
-			//fill(random(140, 160), random(140, 160), random(140, 160));
-			fill(random(20, 60), random(140, 160), random(140, 160));
+			/*〈( ^.^)ノ*/
+			fill(random(140, 160), random(140, 160), random(140, 160));
+			//fill(random(20, 60), random(140, 160), random(140, 160));
 			//fill(random(140, 160), random(140, 160), random(20, 60));
     	rect(poses[i].pose.rightWrist.x, poses[i].pose.rightWrist.y, random(10, 100), random(10, 100));
 			
+			/*〈( ^.^)ノ*/
 			fill(random(140, 160), random(140, 160), random(140, 160));
 			//fill(random(140, 160), random(20, 60), random(140, 160));
 			//fill(random(140, 160), random(20, 60), random(40, 80));
