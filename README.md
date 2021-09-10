@@ -7,7 +7,7 @@ En este repo encontraremos los ejercicios y los materiales del taller "Artes Esc
 
 ## Materiales del concurso
 
-<https://github.com/JoakuDeSotavento/dance-the-cloud/tree/main/materiales>
+<https://github.com/JoakuDeSotavento/ArEs-NuTec>
 
 ## Libros
 
@@ -17,7 +17,7 @@ Esta es una selección de los mejores libros para estos menesteres
 
 ## Ejemplos
 
-<https://arterobotico.com/blog/>
+<https://openprocessing.org/user/278519?view=activity>
 
 
 ## Autores
