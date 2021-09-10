@@ -1,5 +1,7 @@
-# Cuerpo Remediado
+# ArEs & NuTec
 En este repo encontraremos los ejercicios y los materiales del taller "Artes Escénicas y nuevas tecnologías: videoarte interactivo". Impartido por los profesores Alfredo Millares y Joaquín Díaz-Duran, con la colaboración de Jorge Marcos. Para el Congreso Vóces Escénicas del Sur.
+<https://www.uc3m.es/ss/Satellite/Cultura/es/TextoDosColumnas/1371240194554/Conjuntos>
+<https://openprocessing.org/user/278519>
 
 ## Slides
 
@@ -53,3 +55,4 @@ Madrid, 1998. Estudiante de ingeniería informática, teclista y productor de m�
 
 [Instagram](https://www.instagram.com/Jorgeelalto) |
 [github](https://github.com/Jorgeelalto) |
+[web](https://www.7thpyramid.es) |
