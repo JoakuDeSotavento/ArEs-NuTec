@@ -47,7 +47,7 @@ El año pasado presentó su trabajo con la Interfaz Cyborg en los festivales Scr
 
 
 **Jorge Marcos Chávez**
-![@jorgemarcos](./img/jorge.jpg)
+![@jorgemarcos](./img/jorge2.jpg)
 
 Madrid, 1998. Estudiante de ingeniería informática, teclista y productor de música electrónica. Casi graduado por la Universidad Carlos III de Madrid, y buscando aplicar todo lo aprendido en el ámbito audiovisual. Músico desde los 10 años, haciendo electrónica desde hace 7, y  aficionado a la generación de gráficos y sonido por ordenador, intentando complementar ambas disciplinas.
 
