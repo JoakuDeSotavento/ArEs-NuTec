@@ -3,7 +3,7 @@ En este repo encontraremos los ejercicios y los materiales del taller "Artes Esc
 
 ## Slides
 
-<https://docs.google.com/presentation/d/1q4ATepbuUnKqU6-4rVXErL10PGsk1ZT5JEgx1fhNxEU/edit?usp=sharing>
+Aquí encontraras la [presentación del workshop](https://docs.google.com/presentation/d/1DX37IQetv_PP4Qh69zUOSTQCTIWbKxt1YpE8Olq1D04/edit?usp=sharing) {:target="_blank"}
 
 ## Materiales del concurso
 
