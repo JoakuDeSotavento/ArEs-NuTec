@@ -1,5 +1,5 @@
 # Cuerpo Remediado
- En este repositorio se encuentran los ejercicios del taller de interactividad y cuerpo.
+En este repo encontraremos los ejercicios y los materiales del taller "Artes Escénicas y nuevas tecnologías: videoarte interactivo". Impartido por los profesores Alfredo Millares y Joaquín Díaz-Duran, con la colaboración de Jorge Marcos. Para el Congreso Vóces Escénicas del Sur.
 
 ## Slides
 
@@ -44,3 +44,12 @@ El año pasado presentó su trabajo con la Interfaz Cyborg en los festivales Scr
 [twitter](https://twitter.com/joaku_Sotavento) |
 [web](https://www.arterobotico.com) |
 [github](https://github.com/JoakuDeSotavento) |
+
+
+**Jorge Marcos Chávez**
+![@jorgemarcos](./img/jorge.jpg)
+
+Madrid, 1998. Estudiante de ingeniería informática, teclista y productor de música electrónica. Casi graduado por la Universidad Carlos III de Madrid, y buscando aplicar todo lo aprendido en el ámbito audiovisual. Músico desde los 10 años, haciendo electrónica desde hace 7, y  aficionado a la generación de gráficos y sonido por ordenador, intentando complementar ambas disciplinas.
+
+[Instagram](https://www.instagram.com/Jorgeelalto) |
+[github](https://github.com/Jorgeelalto) |
